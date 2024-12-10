@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="makeReservation2.css">
+</head>
+<body>
+    <div class="container-reserve">
+        <div class="restaurant-info-reserve">
+            <button id="backModalBtn" class="menu-bar" type="button" onclick="goBack()">&#8249;</button>
+            <img class="logo-reserve" src="Pics/90.png" alt="Restaurant Logo">
+            <div class="carousel-reserve">
+                <img class="restoImg" src="Pics/47.png" alt="Restaurant Image">
+            </div>
+            <div class="details-reserve">
+                <p class="address-reserve">Gaisano Country Mall, Banilad,<br>Cebu City 6000, 1st Floor</p>
+            </div>
+        </div>
+
+        <div class="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm">
+                <label for="diners">Number of Diners</label>
+                <select id="diners" name="diners">
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>3 Adults</option>
+                    <option>4 Adults</option>
+                    <option>5 Adults</option>
+                    <option>6 Adults</option>
+                </select>
+
+                <label for="date">Select Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Timeslot</label>
+                <select id="time" name="time">
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+                    <option>6:00 PM</option>
+                    <option>7:00 PM</option>
+                    <option>8:00 PM</option>
+                </select>
+
+                <button type="submit" class="proceed">Proceed</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="makeReservation2.js"></script>
+    
+</body>
+</html>

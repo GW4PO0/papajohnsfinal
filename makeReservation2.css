@@ -1,0 +1,150 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .reservation-form h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }  
+  
+  .reservation-form label,
+  .reservation-form select,
+  .reservation-form option {
+      font-family: Arial, Helvetica, sans-serif
+  }
+
+  .container-reserve {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove unnecessary borders */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .menu-bar {
+    position: absolute; /* Position the button relative to its parent container */
+    top: 20px; /* Adjust the distance from the top */
+    left: 20px; /* Adjust the distance from the left */
+    background-color: #8d4c32;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%; /* Make it circular */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.menu-bar:hover {
+    background-color: #331a00; /* Darker color on hover */
+}
+  /* Left Section */
+  .restaurant-info-reserve {
+    background: url(bgdark.png);
+    background-size: cover;
+    object-fit: contain;
+    width: 55%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo-reserve {
+    color: #fff;
+    border-radius: 8px;
+    width: 180px;
+    height: 110px;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+  }
+  .carousel-reserve {
+    position: relative;
+  }
+  
+  .carousel-reserve img {
+    width: 420px;
+    height: 400px;
+    border-radius: 8px;
+  }
+  
+  .address-reserve {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .details-reserve{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Right Section */
+ .reservation-form {
+  width: 45%; /* Make it match the left section's width */
+  background-color: #895b27; /* Ensure the background covers the entire space */
+  color: #fff;
+  padding: 70px; /* Adjust padding to remove extra spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+  .reservation-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  select,
+  input,
+  button {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  select,
+  input {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .proceed {
+    font-size: 14px; /* Adjust font size for a smaller look */
+    padding: 10px 30px; /* Reduce padding */
+    border: none;
+    border-radius: 12px; /* Add border radius for a rounded look */
+    background-color: #613e18;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 30px auto 0; /* Center the button horizontally */
+    display: block; /* Ensure centering works */
+}
+
+.proceed:hover {
+  background-color: #744c20;
+}

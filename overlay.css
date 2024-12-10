@@ -1,0 +1,76 @@
+.container1 {
+    position: relative; /* Ensure the overlay is positioned relative to this container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    z-index: 1; /* Ensure it sits above other content */
+}
+
+.header, .desc {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Higher z-index than overlay */
+} 
+
+.container2 {
+    position: relative; /* Ensure the overlay is positioned relative to this container */
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 173, 173, 0.603); /* Black with 50% transparency */
+    z-index: 1; /* Ensure it sits above other content */
+}
+
+.info-section, .info-image, .info-content, .know-more-button {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Higher z-index than overlay */
+} 
+
+.container3 {
+    position: relative; /* Ensure the overlay is positioned relative to this container */
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 800px;
+    background-color: rgba(173, 173, 173, 0.603); /* Black with 50% transparency */
+    z-index: 1; /* Ensure it sits above other content */
+}
+
+.overlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 173, 173, 0.603); /* Black with 50% transparency */
+    z-index: 1; /* Ensure it sits below other content */
+}
+.overlay5{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 104%;
+    background-color: rgba(173, 173, 173, 0.603);
+    z-index: 0; /* Ensure it sits below other content */
+}
+.foodmenu, .menu-items {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Higher z-index than overlay */
+} 

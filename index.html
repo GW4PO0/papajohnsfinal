@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals</title>
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="overlay.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="carousel.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+
+<div class="container1" id="container1">
+    <div class="overlay"></div>
+    <div class="header">
+        <div class="logo">
+            <img src="Pics/90.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#" onclick="scrollToContainer1()"><p>Home</p></a>
+            <a href="#" onclick="scrollToContainer3()"><p>Stores</p></a>
+            <a href="#" onclick="scrollToContainer4()"><p>Menu</p></a>
+            <a href="#" onclick="scrollToContainer5()"><p>Contact us</p></a>
+        </div>
+    </div>
+
+    <div class="desc">
+        <h1>WE’VE GOT YOUR FEAST COVERED!</h1>
+        <p>Elevate your dining experience with every bite at Papa John's Restaurant.</p>
+        <button class="order-button" onclick="scrollToContainer2()">Get Started</button> 
+    </div>
+    
+</div>
+
+<div class="allBgimg">
+<div class="container2" id="container2">
+    <div class="overlay2"></div>    
+    <div class="info-section">
+        <img src="49-removebg-preview.png" alt="Family Dining" class="info-image"> 
+        <div class="info-content">
+            <h2 class="info-title">10 Years of Flavorful Filipino Smiles</h2> 
+            <p>For 10 years, Papa John's has been bringing the vibrant flavors of Filipino cuisine to your table. Every dish we serve is crafted with love, passion, and a deep respect for tradition, ensuring every bite is a celebration of Filipino culture. From hearty classics to unique specialties, we take pride in sharing the warmth and smiles that define the Filipino spirit. Join us as we continue this flavorful journey, one plate at a time!</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="container3" id="container3">
+    <div class="overlay3"></div>
+        <section id="tranding">
+          <div class="container">
+            <h1 class="text-center section-heading"  id="targetSection">Our Branches</h1>
+          </div>
+          <div class="container">
+            <div class="swiper tranding-slider">
+              <div class="swiper-wrapper">
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="Pics/46.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Papa John's - Consolacion
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.9</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>  
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title">Papa John's - Consolacion</h1>
+                      <p class="card-info">SM Lacion, Barangay Lamac,<br> Consolacion City, 6001 <br> 2nd Floor, Beside Miniso</p>
+                      <button class="card-btn" onclick="showReservationForm1()">Reserve</button>
+                  </div>
+                  </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="Pics/45.png" alt="Tranding">
+                  </div>
+                  <div class="tranding-slide-content">
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">
+                        Papa John's - Banilad
+                      </h2>
+                      <h3 class="food-rating">
+                        <span>4.8</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title">Papa John's - Banilad</h1>
+                    <p class="card-info">Gaisano Country Mall, Barangay Banilad, <br> Cebu City, 6000 <br> Ground Floor, Beside Jollibee</p>
+                    <button class="card-btn" onclick="showReservationForm2()">Reserve</button>
+                </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="Pics/47.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Papa John's - Talamban
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>5.0</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title">Papa John's - Talamban</h1>
+                      <p class="card-info">Gaisano Grandmall, Barangay Talamban, <br> Cebu City, 6000 <br> 3rd Floor, Beside Dunkin Donuts</p>
+                      <button class="card-btn" onclick="showReservationForm3()">Reserve</button>
+                  </div>
+                  </div>
+                <!-- Slide-end -->
+    
+              </div>
+    
+              <div class="tranding-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+    
+            </div>
+          </div>
+        </section>
+    
+</div>
+      
+    
+   
+
+<div class="container4" id="container4">
+    <div class="overlay4"></div>
+    <h2 class="foodmenu">PAPA JOHN'S MENU</h2>
+    <div class="menu-items">
+        <div class="menu-row">
+            <div class="menu-item" onclick="toggleDropdown('dropdown1')" style="background-image: url('Pics/TO\ UPLOAD\ GDRIVE.png');">
+                <h3>PAUNANG HAPAG (STARTERS) <span class="caret"></span></h3>
+                <div class="dropdown" id="dropdown1">
+                    <div class="dropdown-item" onclick="location.href='starters.html'">PAMPAGANA (APPETIZERS)</div>
+                    <div class="dropdown-item" onclick="location.href='Soups.html'">SABAW (SOUPS)</div>
+                </div>
+            </div>
+            
+            <div class="menu-item" onclick="toggleDropdown('dropdown2')" style="background-image: url('Pics/42.png');">
+                <h3>PANGUNAHING ULAM (MAIN DISHES) <span class="caret"></span></h3>
+                <div class="dropdown" id="dropdown2">
+                    <div class="dropdown-item" onclick="location.href='inihaw.html'">INIHAW (GRILLED DISH)</div>
+                    <div class="dropdown-item" onclick="location.href='dagat.html'">PAGKAING DAGAT (SEAFOODS)</div>
+                    <div class="dropdown-item" onclick="location.href='nilaga.html'">NILAGA (STEWS)</div>
+                    <div class="dropdown-item" onclick="location.href='gulay.html'">GULAY (VEGETABLE DISH)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-row">
+            <div class="menu-item" onclick="toggleDropdown('dropdown3')" style="background-image: url('Pics/43.png');">
+                <h3>MERYENDA & HIMAGAS (SNACKS & DESSERTS) <span class="caret"></span></h3>
+                <div class="dropdown" id="dropdown3">
+                    <div class="dropdown-item" onclick="location.href='snacks.html'">PANGMERYENDA (SNACKS)</div>
+                    <div class="dropdown-item" onclick="location.href='desserts.html'">PANGHIMAGAS (DESSERTS)</div>
+                </div>
+            </div>
+            
+            <div class="menu-item" onclick="toggleDropdown('dropdown4')" style="background-image: url('Pics/44.png');">
+                <h3>INUMIN (BEVERAGES) <span class="caret"></span></h3>
+                <div class="dropdown" id="dropdown4">
+                    <div class="dropdown-item" onclick="location.href='pampalamig.html'">MGA PAMPALAMIG (COLD DRINKS)</div>
+                    <div class="dropdown-item" onclick="location.href='serbesa.html'">SERBESA (ALCOHOLIC DRINKS)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="transition" id="transition"></div>
+<div class="container5" id="container5">
+  <div class="overlay5"></div>
+  <h1 class="contactus-h1">Contact Us</h1>
+  <div class="contact-container">
+    <div class="contact-box">
+        <div class="left-side">
+            <h2 class="h2-get">Get in touch</h2>
+            <form>
+                <div class="name-row">
+                    <div class="input-row">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="input-row">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-row">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" placeholder="Phone">
+                </div>                    
+                <textarea placeholder="Type your query here..."></textarea>
+                <button class="button-submit" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="right-side">
+            <h2 class="h2-get">Contact us at</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>87-100-52673</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>papajohns@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <p>www.papajohnsrestaurant.com</p>
+                </div>
+                <p class="message">
+                   At Papa John's your feedback and inquiries<br>
+                    are always welcome. Feel free to reach out<br>
+                    to us for reservations or any questions<br>
+                    about our menu.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- FOOTER-->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Logo and Description -->
+    <div class="footer-section about">
+      <div class="logo">
+        <img src="Pics/90.png" alt="Papa John's Logo">
+      </div>
+      <p class="justified-paragraph">
+        Bringing the best of Filipino cuisine to your table for over a decade. Join us in celebrating the vibrant flavors and rich heritage of the Philippines. Follow us on social media and stay updated on our latest offerings!
+      </p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/DEARBSKTBALL" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/papa_johns/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://soundcloud.com/carl-cesar-r-cabahug/jsibfjskz?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+    
+    </div>
+    
+
+   <!-- Founders Section -->
+  <div class="footer-section founders">
+    <h3>Founders</h3>
+    <ul>
+      <li><i class="fas fa-user"></i> John Larrie Isok</li>
+      <li><i class="fas fa-user"></i> Keith Francis Aquitan</li>
+      <li><i class="fas fa-user"></i> Jayrah Ledamo</li>
+    </ul>
+    <div class="footer-section email">
+      <p>Do you want to receive special offers from Papa John's?</p>
+      <form>
+        <input type="email" placeholder="Email here" class="email-input">
+        <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i></button>
+      </form>
+      </div>
+  </div>
+
+  <!-- Operating Hours Section -->
+  <div class="footer-section hours">
+    <h3>Operating Hours</h3>
+    <ul>
+      <li><i class="fas fa-calendar-alt"></i> Monday – Friday<br>11:00 AM – 9:00 PM</li>
+      <li><i class="fas fa-calendar-alt"></i> Saturday – Sunday<br>11:00 AM – 9:00 PM</li>
+    </ul>
+  </div>
+</div>
+
+</footer>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="final.js"></script>
+<script src="reservation1.js"></script>
+
+</body>
+</html>

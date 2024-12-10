@@ -1,0 +1,145 @@
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    background-image: url(Pics/45.png); /* Set the background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background attachment */
+    height: 100vh; /* Ensure body takes full height */
+    position: relative; /* Set position to relative for stacking context */
+}
+
+.overlay {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    z-index: 1; /* Ensure it sits above the background */
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    background-color: transparent; /* Set background to transparent */
+    box-shadow: none; /* Remove the shadow if desired */
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Higher z-index than overlay */
+}
+
+.menu-bar {
+    background-color: #331a00; /* Background color for the button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 20px; /* Font size for the button */
+    color: white; /* Text color */
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Width of the button (smaller) */
+    height: 40px; /* Height of the button (smaller) */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.menu-bar:hover {
+    background-color: #6D4F33; /* Darker color on hover */
+}
+
+.logo {
+    width: 120px;
+    height: 70px;
+}
+
+.starterImg {
+    display: flex;
+    background-image: url(meat.jpg); /* Set the background image */
+    background-size: cover; /* Ensure the image is not stretched */
+    background-position: 0px 290px; /* Center the background image */
+    width: 1000px;
+    height: 150px;
+    border-radius: 15px;
+    margin: auto;
+    position: relative; /* Ensure it can be positioned above the overlay */
+    z-index: 2; /* Higher z-index than overlay */
+}
+
+
+.TITLE{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    position: relative;
+}
+
+.line1{
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    position: relative;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin: 20px 0; /* Add margin for spacing */
+    z-index: 3;
+    position: relative;
+}
+
+.menu-item {
+    display: flex;
+    padding: 20px 0px 0px 0px;
+    background-color: #6D4F33; /* Semi-transparent background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 10px 0; /* Space between items */
+    width: 100%; /* Width of the menu item */
+    max-width: 600px; /* Maximum width */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.menu-image {
+    margin-left: 15px;
+    width: 200px; /* Fixed width for images */
+    height: 130px; /* Maintain aspect ratio */
+}
+
+.menu-details {
+    padding: 15px;/* Padding for text */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start; /* Center text vertically */
+    width: 302px;
+    color: white;
+}
+
+.menu-details h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Font size for the title */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-details p {
+    margin: 5px 0; /* Space between description and title */
+    font-size: 15px; /* Font size for description */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.price{
+    padding: 15px;
+    background-color: #4a2b13 ;
+    color: white;
+    font-size: 15px;
+    margin-top: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+

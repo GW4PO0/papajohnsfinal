@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 1</title>
+    <link rel="stylesheet" href="table1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Pics/90.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html#container1" onclick="scrollToContainer1()"><p>Home</p></a>
+            <a href="index.html#container3" onclick = "scrollToContainer3()"><p>Stores</p></a>
+            <a href="index.html#container4" onclick = "scrollToContainer4()"><p>Menu</p></a>
+            <a href="index.html#container5" onclick = "scrollToContainer5()"><p>Contact us</p></a>
+        </div>
+        
+    </div>
+    <div class="reservation-details-container">
+        <div class="reservation-details">
+            <p><strong>Date:</strong> <span id="reservation-date-display">2024-12-14</span></p>
+            <p><strong>Number of Diners:</strong> <span id="number-of-diners">Not Specified</span></p>
+            <p><strong>Time:</strong> <span id="selected-time">Not Specified</span></p>
+        </div>
+        </div>
+    <div class="container-t1">
+        
+        <div class="contact-container-t1">
+            <div class="date-input-container">
+               <p>Change Date: <input type="date" id="reservation-date" value="2024-12-14"></p>
+            </div>
+            <div class="contact-box-t1">
+                <div class="row1">
+                    <div class="rectab1">
+                        <div class="chair1"></div>
+                        <div class="chair2"></div>
+                    </div>
+                    <div class="table1">
+                        <div class="chair3"></div>
+                        <div class="chair4"></div>
+                    </div>
+                    <div class="table2">
+                        <div class="chair3"></div>
+                        <div class="chair4"></div>
+                    </div>
+                    <div class="table3">
+                        <div class="chair3"></div>
+                        <div class="chair4"></div>
+                    </div>
+                    <div class="rectab2">
+                        <div class="chair1"></div>
+                        <div class="chair2"></div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="rectab3">
+                        <div class="chair1"></div>
+                        <div class="chair2"></div>
+                    </div>
+                    <div class="table4">
+                        <div class="chair3"></div>
+                        <div class="chair4"></div>
+                    </div>
+                    <div class="table5">
+                        <div class="chair3"></div>
+                        <div class="chair4"></div>
+                    </div>
+                    <div class="table6">
+                        <div class="chair3"></div>
+                        <div class="chair4"></div>
+                    </div>
+                    <div class="rectab4">
+                        <div class="chair1"></div>
+                        <div class="chair2"></div>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="rectab5">
+                        <div class="chair1"></div>
+                        <div class="chair2"></div>
+                    </div>
+                    <div class="table7"></div>
+                    <div class="table8">
+                        <div class="chair3"></div>
+                        <div class="chair4"></div>
+                    </div>
+                    <div class="table9">
+                        <div class="chair3"></div>
+                        <div class="chair4"></div>
+                    </div>
+                    <div class="rectab6">
+                        <div class="chair1"></div>
+                        <div class="chair2"></div>
+                    </div>
+                </div>
+                <div class="row4">
+                    <div class="rectab7">
+                        <div class="chair1"></div>
+                        <div class="chair2"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="legend-container">
+                <div class="small-box" id="small-box1"><p> - Vacant Seat</p></div>
+                <div class="small-box" id="small-box2"><p> - Occupied Seat</p></div>
+                <div class="small-box" id="small-box3"><p> - Your Chosen Seat</p></div>
+            </div>
+            
+        </div>
+        <button class="confirm-btn">Confirm</button>
+    </div>
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn"></span>
+            <h2>Reservation Details</h2>
+        <p><strong>Restaurant Location:</strong> SM Consolacion, Lamac, Consolacion City 6001, 1st Floor</p>
+        <p><strong>People:</strong> <span id="modal-people">0 people</span></p>
+        <p><strong>Date:</strong> <span id="modal-date">not specified</span></p>
+        <p><strong>Time:</strong> <span id="modal-time">not specified</span></p>
+        <p class="note">*Note: Your reservation will be invalid if you're already 20 minutes late.</p>
+            <button id="confirm-reservation" class="modal-btn">Confirm</button>
+            <button id="cancel-reservation" class="modal-btn">Cancel</button>
+        </div>
+    </div>
+    <div id="final-confirmation-modal" class="modal">
+        <div class="modal-content">
+            <p style="color: white;">Your reservation is now confirmed. Thank you for visiting us. See you there!</p>
+            <button id="final-ok" class="modal-btn">OK</button>
+        </div>
+    </div>
+    <script src="table1.js"></script>
+</body>
+</html>

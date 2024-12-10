@@ -1,0 +1,826 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: Georgia, serif;
+}
+
+h2 {
+    font-family: Georgia, serif;
+}
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url(container1BG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 250px;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 150px; 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+    position: relative;
+    right: 60px;
+}
+
+.nav-links p {
+    margin: 0 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-bar {
+    margin-left: 20px; 
+}
+
+.desc {
+    background-image: url('your-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center; 
+}
+
+.desc h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.desc p {
+    font-size: 1.2em;
+}
+
+.order-button {
+    background-color: #b38457;
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 10px; 
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: #6D4F33;
+}
+
+/* Background for all containers inside allBgimg */
+.allBgimg {
+    background-image: url(bg.png); /* Set the background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background attachment */
+    padding: 0; /* Remove padding if needed */
+}
+
+/* Remove individual background images from containers */
+.container2, .container3, .container4, .container5 {
+    position: relative;
+    padding: 40px; /* Padding around the container */
+    height: 600px; /* Set a fixed height for the container */
+    background: transparent; /* Make background transparent to show the allBgimg background */
+}
+
+.container2 {
+    position: relative;
+    padding: 40px; /* Maintain padding */
+    height: 600px; /* Set a fixed height */
+    background: transparent; /* Make background transparent to show the allBgimg background */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.container3 {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    height: 600px;
+    margin-bottom: 200px;
+}
+
+.container4 {
+    color: #ec994b;
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    height: 600px;
+    background: transparent; /* Make background transparent to show the allBgimg background */
+}
+.container5 {
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    height: 700px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+
+    
+}
+.contact-container {
+    width: 100%;
+    max-width: 1000px;
+    z-index: 2;
+    
+}
+
+.contactus-h1{
+    color: #331a00;
+    z-index: 1;
+    position: relative;
+    bottom: 30px;
+}
+
+.contact-box {
+    display: flex;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.left-side, .right-side {
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 1);
+    background: rgb(200, 155, 96);
+    padding: 30px;
+    width: 50%;
+    z-index: 1;
+}
+
+.h2-get {
+    color: #331a00;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.input-row {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-row i {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 30px;
+    background: rgb(141, 102, 50);
+    border: none;
+    border-radius: 0;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    padding: 14px;
+    background: rgb(141, 102, 50);
+    border: none;
+    border-radius: 0;
+    color: white;
+    height: 80px;
+    resize: none;
+    font-size: 14px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.button-submit {
+    background: #795640;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 300px;
+    transform: translateX(-50%);
+}
+
+.button-submit:hover {
+    background: #76614a;
+}
+
+.contact-info {
+    color: white;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-item i {
+    width: 20px;
+    font-size: 12px;
+    color: #331a00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.info-item p {
+    line-height: 2;
+    color: #331a00;  
+
+}
+
+.message {
+    color: #331a00;
+    margin-top: 50px;
+    line-height: 1.4;
+    font-size: 16   px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+    }
+    
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .right-side {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Add new styles for the name row container */
+.name-row {
+    display: flex;
+    gap: 15px;  /* Space between first and last name */
+    margin-bottom: 15px;
+}
+
+.name-row .input-row {
+    flex: 1;  /* Make both inputs take equal width */
+    margin-bottom: 0;  /* Remove bottom margin since it's handled by name-row */
+}
+
+/* Update input styles */
+.input-row input {
+    width: 100%;
+    padding: 8px;  /* Reduced padding for shorter height */
+    padding-left: 30px;
+}
+
+.input-row i {
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+/* Add styles for button container */
+form {
+    position: relative;  /* For button positioning */
+}
+
+.button-submit {
+    background: #8d6632;
+    color: white;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    min-width: 80px;
+}
+
+.button-submit:hover {
+    background: #76614a;
+}
+
+/* Add border to right side */
+.right-side {
+    padding: 30px;
+    width: 50%;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);  /* Light white border */
+}
+.info-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the section */
+    text-align: center;
+    margin: 160px auto 20px; /* Adjust top margin to 160px and bottom margin to 20px */
+    position: relative; /* Allow positioning adjustments */
+    left: -10px; /* Move slightly to the left */
+    top: 10px; /* Move slightly down */
+}
+.info-section img{
+    position: relative;
+    right: 110px;
+}
+
+.info-image {
+    
+    width: 900px; /* Adjust width as needed */
+    height: 600px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 60px;
+    position: relative;
+    bottom: 60px;
+}
+
+.info-content {
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 1);
+    background-color: rgb(200, 155, 96);
+    padding: 50px;
+    border-radius: 0px 50px 0px 0px;
+    bottom: 30px;
+    text-align: justify;
+    position: relative;
+    right: 60px;
+    max-width: 600px; /* Limit text width */
+    text-align: left; /* Align text to the left */
+    color: #331a00;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.info-title {
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Space below the title */
+    color: #331a00; /* Change color if needed */
+    text-align: center; /* Align text to the left */
+}
+
+.info-content p {
+    font-size: 1.2em; /* Adjust paragraph size */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+
+.locate {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Higher z-index than overlay */
+}
+
+#targetSection {
+    color: #331a00;
+    font-family: Georgia, serif;
+}
+
+
+/* CONTAINER 3 CAROUSEL */
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Higher z-index than overlay */
+    transition: transform 0.5s ease; /* Add transition for sliding effect */
+}
+
+.carousel-item {
+    min-width: 300px; /* Adjust width as needed */
+    margin: 0 10px; /* Space between images */
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 1; /* Lower z-index for the item */
+    transition: transform 0.3s, opacity 0.3s; /* Add transition for smooth effect */
+}
+
+.carousel-item.active {
+    transform: scale(1.1); /* Scale up the active image */
+    opacity: 1; /* Full opacity for the active image */
+}
+
+.carousel-item.semi-active {
+    transform: scale(0.95); /* Slightly smaller size */
+    opacity: 0.8; /* Lower opacity for adjacent images */
+}
+
+.carousel-item.inactive {
+    transform: scale(0.8); /* Scale down inactive images */
+    opacity: 0.5; /* Lower opacity for inactive images */
+}
+
+.carousel img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px; /* Rounded corners */
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 1; /* Lower z-index for the image */
+    height: 400px;
+    margin-top: 70px;
+    transition: filter 0.3s; /* Smooth transition for blur effect */
+}
+
+.carousel-item:hover img {
+    filter: blur(5px); /* Blur the image on hover */
+}
+
+.carousel-text {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+    z-index: 2; /* Higher z-index to ensure it appears above the image */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-item:hover .carousel-text {
+    opacity: 1; /* Show text on hover */
+}
+
+.reserve-button {
+    background-color: #331a00; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above the button */
+}
+
+.card-btn {
+    background-color: white;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 3; /* Ensure controls are above other content */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+/*FOOD MENU*/
+
+.foodmenu {
+    color: #331a00;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-item {
+    position: relative; 
+    background-size: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 10px; 
+    padding: 20px;
+    margin: 20px;
+    width: 550px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-size 0.7s cubic-bezier(0.25, 1.5, 0.5, 1),
+    opacity 0.7s ease; 
+    cursor: pointer; 
+    text-align: center; 
+    color: white; 
+    font-family: Georgia, serif;
+}
+
+.menu-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px; 
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    position: relative; 
+    z-index: 1; 
+}
+
+.menu-item:hover {
+    opacity: 0.9; 
+    background-size: 110%; 
+}
+
+.menu-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white; 
+    margin-left: 10px; 
+    transition: transform 0.3s; 
+}
+
+.menu-item.active .caret {
+    transform: rotate(180deg); 
+}   
+
+.dropdown {
+    display: none; 
+    background-color: #6D4F33;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.dropdown-item {
+    background-color: #6D4F33; 
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.dropdown-item:hover {
+    background-color: rgba(200, 200, 200, 0.8); 
+}
+
+/* Customize the scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #331a00; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Color of the scrollbar track */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Make scrollbar thin */
+    scrollbar-color: #331a00 rgba(255, 255, 255, 0.1); /* Thumb color and track color */
+}
+
+/* Adjust the z-index of the overlay to be lower than the carousel controls */
+
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 173, 173, 0.603); /* Adjust overlay color if needed */
+    z-index: 1; /* Ensure it sits below other content */
+}
+
+/* Ensure the heading is above the overlay */
+.section-heading {
+    position: relative; /* Make it relative to control z-index */
+    z-index: 2; /* Ensure it is above the overlay */
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+/* General Footer Styles */
+.footer {
+    background-color: #331a00;
+    color: #FFF;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+
+  /* Logo and About Section */
+ /* Logo and About Section */
+.footer-section.about {
+    flex: 1;
+    min-width: 300px;
+    text-align: left; /* Aligns content to the left */
+  }
+  
+  .footer-section.about .logo img {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section.about p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+  .footer-section.about .social-icons {
+    margin-top: 40px;
+  }
+  
+  .footer-section.about .social-icons a {
+    margin: 0 10px 0 0; /* Adds spacing between icons */
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .footer-section.about .social-icons a:hover {
+    color: #C7A487;
+  }
+  
+  
+/* Founders Section */
+.footer-section.founders {
+    flex: 1;
+    min-width: 100px;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+  
+  .footer-section.founders h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .footer-section.founders ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section.founders ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-section.founders ul li i {
+    margin-right: 10px;
+  }
+  
+  /* Operating Hours Section */
+  .footer-section.hours {
+    flex: 0;
+    min-width: 200px;
+    margin-top: 20px;
+  }
+  
+  .footer-section.hours h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .footer-section.hours ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 30px;   
+    
+  }
+  
+  .footer-section.hours ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+
+  }
+  
+  .footer-section.hours ul li i {
+    margin-right: 10px;
+    line-height: 30px;
+  }
+  
+  /* Email Subscription Section */
+  .footer-section.email {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  
+  .footer-section.email p {
+    width: 500px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section.email form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .footer-section.email .email-input {
+    flex: 1;
+    padding: 10px ;
+    padding-right: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .footer-section.email .submit-btn {
+    background-color: #663300;
+    color: #FFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-section.email .submit-btn i {
+    font-size: 16px;
+  }
+  
+  .footer-section.email .submit-btn:hover {
+    background-color: #994f00;
+  }
+
+  .justified-paragraph {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 15px 0;
+  }
+ 
+

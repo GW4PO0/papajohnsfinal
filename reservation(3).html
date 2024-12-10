@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Form</title>
+  <link rel="stylesheet" href="reservation(3).css">
+</head>
+<body>
+  <!-- RESERVATION POP-UP -->
+  <div id="reservationModal" class="modal">
+    <div class="modal-content">
+      <button id="backModalBtn" class="back-button">&#8249;</button>
+      <div class="reservation-container">
+        <div class="logo">
+          <img src="Pics/90.png" alt="Logo">
+        </div>
+        <h1 class="title">For Reservations</h1>
+        <form id="reservationForm">
+          <input type="text" id="name" name="name" placeholder="Name" required autocomplete="off">
+          <input type="tel" id="contact" name="contact" placeholder="Contact" required autocomplete="off">
+          <input type="email" id="email" name="email" placeholder="Email" required autocomplete="off">
+          <button type="submit">Proceed</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="reservation(3).js"></script>
+  <script src="final.js"></script>
+</body>
+</html>
